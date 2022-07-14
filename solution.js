@@ -58,7 +58,7 @@ for (let s = 0; s < 1000; s++) {
   }
 }
 console.log(sum);
-*/
+
 //Bonus
 
 //task - 7
@@ -85,27 +85,46 @@ for (let i = 9; i >= 0; i--) {
   console.log(i);
 }
 console.log("----------------------");
-let threeTimesk = 0;
+
+let threeTimesk = " ";
 for (let k = 1; k < 5; k++) {
-  let threeTimesk = [k, k, k];
-  console.log(threeTimesk);
+  //let threeTimesk = [k, k, k];
+  //console.log(k);
+  for (let j = 1; j < 4; j++) {
+    threeTimesk += k + " ";
+  }
 }
+console.log(threeTimesk);
 console.log("----------------------");
 
-for (let z = 0; z < 5; z++) {}
+let threeTimesStr = " ";
+let threeTimesnewStr = " ";
+for (let z = 0; z < 5; z++) {
+  threeTimesStr += z + " ";
 
+  for (let j = 1; j < 4; j++) {
+    threeTimesnewStr = threeTimesStr.repeat(j);
+  }
+}
+//console.log(threeTimesStr);
+console.log(threeTimesnewStr);
+
+*/
 //task - 8
+
 let word = "madam";
 //word = "hello";
 let reverseWord = "";
 for (let i = word.length - 1; i >= 0; i--) {
   reverseWord += word[i];
+}
 
-  if (reverseWord === word) {
-    console.log("isPalindrome");
-  } else {
-    console.log("not a Pakindrome");
-  }
+console.log(reverseWord);
+console.log(word);
+if (reverseWord === word) {
+  console.log("Is a Palindrome");
+} else {
+  console.log("is  not a Palindrome");
 }
 //console.log(reverseWord);
 console.log("----------------------");
